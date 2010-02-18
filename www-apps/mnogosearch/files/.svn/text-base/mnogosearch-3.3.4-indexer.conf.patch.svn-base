@@ -1,0 +1,15 @@
+diff -Naur mnogosearch-3.3.4.orig/etc/indexer.conf-dist mnogosearch-3.3.4/etc/indexer.conf-dist
+--- mnogosearch-3.3.4.orig/etc/indexer.conf-dist	2005-10-11 04:23:29.000000000 +0000
++++ mnogosearch-3.3.4/etc/indexer.conf-dist	2006-04-30 16:08:01.000000000 +0000
+@@ -2,9 +2,7 @@
+ 
+ ###########################################################################
+ # This is a sample indexer config file.
+-# To start using it please edit and rename to indexer.conf.
+-# You can also make this file executable and run it directly.
+-# You may want to keep the original indexer.conf-dist for future references.
++# You can make this file executable and run it directly.
+ # Use '#' to comment out lines.
+ # All command names are case insensitive (DBAddr=DBADDR=dbaddr).
+ # You may use '\' character to prolong current command to next line
+

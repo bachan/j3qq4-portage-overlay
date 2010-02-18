@@ -1,0 +1,14 @@
+
+# Bachan <bachan@j3qq4.org> (15 Feb 2007)
+# masked pending execution and instant burn in hell
+=net-p2p/hrktorrent-9999*
+
+# Bachan <bachan@j3qq4.org> (15 Feb 2007)
+# masked guilty bastard for its sins
+=x11-wm/awesome-9999*
+
+# Kevin G Fourie <kevin@4e.co.za> (07 Sep 2007)
+# masked pending testing 
+>=www-apps/knowledgetree-3.5
+
+

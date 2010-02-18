@@ -1,0 +1,31 @@
+# ChangeLog for www-apps/mnogosearch
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+  13 Sep 2007; Jakub Moc <jakub@gentoo.org> mnogosearch-3.3.4.ebuild:
+  Use virtual/httpd-cgi for webserver dependency
+
+  12 Sep 2007; Jakub Moc <jakub@gentoo.org>
+  -files/mnogosearch-3.2.38-configure.in.patch,
+  +files/mnogosearch-3.3.4-indexer.conf.patch,
+  -files/mnogosearch-indexer.conf.patch, -mnogosearch-3.2.40.ebuild,
+  +mnogosearch-3.3.4.ebuild:
+  Version bump for Bug 187576; remove old broken version. Major ebuild
+  rewrite, fix dependencies, add lots of use flags, sanitize ebuild.
+
+  08 Sep 2007; Jakub Moc <jakub@gentoo.org> -mnogosearch-3.2.38.ebuild,
+  mnogosearch-3.2.40.ebuild:
+  Remove old. Use unicode USE flags like the rest of the tree, instead of
+  inventing new ones.
+
+  03 Dec 2006; Emanuele Gentili <bathym@0x656d67.org>
+  +mnogosearch-3.2.40.ebuild:
+  Version bump
+
+*mnogosearch-3.2.38.ebuild (11 Jun 2006)
+
+  11 Jun 2006; Peter Volkov <pva@gentoo.org> ChangeLog:
+  +files/mnogosearch-indexer.conf.patch
+  +files/mnogosearch-3.2.38-configure.in.patch +files/postinstall-en.txt
+  +mnogosearch-3.2.38.ebuild +metadata.xml Initial bump. Enjoy :)
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<herd>no-herd</herd>
+	<longdescription lang="en">
+		From http://hjemli.net/git/cgit/about/:
+		cgit is 
+		* a cgi application implemented in C: it's basically (yet) another git
+			command, used to generate html.
+		* not forking: all git operations are performed by linking with libgit.a.
+		* using a built-in cache: the generated html is stored on disk for the
+			benefit of later requests.
+		* fond of virtual urls - using PATH_INFO or modules like mod_rewrite makes
+			cgit generate urls with few or no querystring parameters, e.g.
+			http://hjemli.net/git/cgit/log/Makefile vs.
+			http://hjemli.net/git?r=cgit&amp;p=log&amp;path=Makefile.
+		* not too visual, but sometimes a bit of graphics can be justified.
+		* open source - it is licensed under GPL v2.
+		* maintained by Lars Hjemli, who is happy to receive patches, suggestions
+		and bug reports.
+	</longdescription>
+	<use>
+		<flag name="standalone">
+			Install only binary. Usefull for remote fastcgi setups
+			Conflicts with 'dataonly'
+		</flag>
+		<flag name="dataonly">
+			Do not install binary or any configs. Usefull for setups when real
+			binary located on other host. Conflicts with 'standalone'
+		</flag>
+	</use>
+</pkgmetadata>
+

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/1069/trunk/app-text/foxitreader
+END
+metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/1069/trunk/app-text/foxitreader/metadata.xml
+END
+Manifest
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/1069/trunk/app-text/foxitreader/Manifest
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/1049/trunk/app-text/foxitreader/ChangeLog
+END
+foxitreader-1.0.1.ebuild
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/1049/trunk/app-text/foxitreader/foxitreader-1.0.1.ebuild
+END
+foxitreader-1.1.0.ebuild
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/1049/trunk/app-text/foxitreader/foxitreader-1.1.0.ebuild
+END

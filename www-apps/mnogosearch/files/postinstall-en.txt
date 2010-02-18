@@ -1,0 +1,29 @@
+To start using mnogosearch you need configure database (create database user
+account and database itself) and edit at least indexer.conf and search.htm so
+that indexer and search.cgi could connect to database.
+
+1.Fex for mysql database. Connect to database with root account and create user.
+
+  mysql> GRANT ALTER, CREATE, CREATE TEMPORARY TABLES, DELETE, DROP, INSERT,
+  LOCK TABLES, SELECT, UPDATE ON mnogosearch.* TO 'foo'@'localhost' IDENTIFIED
+  BY 'bar';
+
+  Now create database:
+
+  mysqladmin -u foo -p create mnogosearch
+
+2.Edit DBAdr in ${VHOST_ROOT}/mnogosearch/indexer.conf
+  file to reflect your database user and password.
+
+  After that run indexer with 
+  "-d ${VHOST_ROOT}/mnogosearch/indexer.conf"
+  option. You may wish to add alias into your ~/.bashrc:
+  alias indexer="indexer -d ${VHOST_ROOT}/mnogosearch/indexer.conf"
+
+3.Edit DBAdr in ${VHOST_ROOT}/mnogosearch/search.htm.
+
+Run "indexer -d ${VHOST_ROOT}/mnogosearch/indexer.conf -Ecreate"
+to create tables in database. After that add "Server http://www.foo.org"
+parameter into indexer.conf and run indexer to index that server.
+
+Point your browser to http://${VHOST_CGIBINDIR}/search.cgi ;)

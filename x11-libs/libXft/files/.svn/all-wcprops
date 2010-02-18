@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/415/trunk/x11-libs/libXft/files
+END
+libXft-dont_interfere_with_newspr-include-embeddedbitmap.patch.bz2
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/415/trunk/x11-libs/libXft/files/libXft-dont_interfere_with_newspr-include-embeddedbitmap.patch.bz2
+END

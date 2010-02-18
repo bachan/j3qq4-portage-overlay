@@ -1,0 +1,11 @@
+--- config.h.in.orig	2008-07-20 01:53:45.000000000 +0200
++++ config.h.in	2008-07-20 01:54:08.000000000 +0200
+@@ -564,7 +564,7 @@
+  * If you are on a SYS V machine that restricts filename length to 14 
+  * characters, you may need to enforce that by setting NAME_MAX to 14
+  */
+-#undef NAME_MAX		/* KEEP_UNDEF_HERE override system value */
++#undef NAME_MAX	
+ #undef NAME_MAX
+ 
+ /*

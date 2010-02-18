@@ -1,0 +1,8 @@
+There is a few variants of configuration:
+1) Via global config file: /etc/cgitrc
+2) Or via local config file, shipped in ./conf dir into webapp_dir. It has to
+be explicitly specified with CGIT_CONFIG env variable into spawn-script
+
+You need to modify config with the list of available
+repositories. Look at the examples in the file by searching for
+repo.path

@@ -1,0 +1,140 @@
+--- cli/btcli.h	2009-01-13 01:43:35.000000000 +0300
++++ cli/btcli.h	2009-02-22 12:48:12.889647408 +0300
+@@ -19,6 +19,29 @@
+ #include "iobuf.h"
+ #include "queue.h"
+ 
++#define BTPDCOL_ESC     "\e["
++#define BTPDCOL_NORM    "0"
++#define BTPDCOL_BOLD    "1"
++#define BTPDCOL_END     "m"
++#define BTPDCOL_BLACK   ";30"
++#define BTPDCOL_RED     ";31"
++#define BTPDCOL_GREEN   ";32"
++#define BTPDCOL_YELLOW  ";33"
++#define BTPDCOL_BLUE    ";34"
++#define BTPDCOL_VIOLET  ";35"
++#define BTPDCOL_CYAN    ";36"
++#define BTPDCOL_WHITE   ";37"
++
++/* example: "\e[1;34mTEXT\e[m" */
++
++#define BTPDCOL_STAT_HEAD  BTPDCOL_ESC BTPDCOL_BOLD   BTPDCOL_END
++#define BTPDCOL_STAT_ENDL  BTPDCOL_ESC BTPDCOL_END
++#define BTPDCOL_STAT_INACT BTPDCOL_ESC BTPDCOL_YELLOW BTPDCOL_END
++#define BTPDCOL_STAT_START BTPDCOL_ESC BTPDCOL_BLUE   BTPDCOL_END
++#define BTPDCOL_STAT_STOP  BTPDCOL_ESC BTPDCOL_BLUE   BTPDCOL_END
++#define BTPDCOL_STAT_LEECH BTPDCOL_ESC BTPDCOL_CYAN   BTPDCOL_END
++#define BTPDCOL_STAT_SEED  BTPDCOL_ESC BTPDCOL_GREEN  BTPDCOL_END
++
+ extern const char *btpd_dir;
+ extern struct ipc *ipc;
+ 
+--- cli/list.c	2009-01-13 01:43:35.000000000 +0300
++++ cli/list.c	2009-02-22 12:48:12.969645313 +0300
+@@ -81,11 +81,18 @@
+ {
+     struct item *p;
+     BTPDQ_FOREACH(p, &itms->hd, entry) {
+-        printf("%-40.40s %4u %c. ", p->name, p->num, p->st);
++        switch (p->st) {
++            case 'I': printf(BTPDCOL_STAT_INACT); break;
++            case '+': printf(BTPDCOL_STAT_START); break;
++            case '-': printf(BTPDCOL_STAT_STOP ); break;
++            case 'L': printf(BTPDCOL_STAT_LEECH); break;
++            case 'S': printf(BTPDCOL_STAT_SEED ); break;
++        }
++        printf("%4u %c. ", p->num, p->st);
+         print_percent(p->cgot, p->csize);
+         print_size(p->csize);
+         print_ratio(p->totup, p->csize);
+-        printf("\n");
++        printf(" %s" BTPDCOL_STAT_ENDL "\n", p->name);
+     }
+ }
+ 
+@@ -149,6 +156,6 @@
+         code = btpd_tget(ipc, itms.tps, itms.ntps, keys, nkeys, list_cb, &itms);
+     if (code != IPC_OK)
+         diemsg("command failed (%s).\n", ipc_strerror(code));
+-    printf("%-40.40s  NUM ST   HAVE    SIZE   RATIO\n", "NAME");
++    printf(BTPDCOL_STAT_HEAD " NUM ST   HAVE    SIZE   RATIO  NAME" BTPDCOL_STAT_ENDL "\n");
+     print_items(&itms);
+ }
+--- cli/stat.c	2009-01-27 00:15:10.000000000 +0300
++++ cli/stat.c	2009-02-22 12:48:12.821574145 +0300
+@@ -62,15 +62,15 @@
+ print_stat(struct btstat *st)
+ {
+     print_percent(st->content_got, st->content_size);
++    print_size(st->content_size);
++    print_ratio(st->tot_up, st->content_size);
+     print_size(st->downloaded);
+     print_rate(st->rate_down);
+     print_size(st->uploaded);
+     print_rate(st->rate_up);
+-    print_ratio(st->tot_up, st->content_size);
+     printf("%4u ", st->peers);
+     print_percent(st->pieces_seen, st->torrent_pieces);
+     printf("%3u", st->tr_good);
+-    printf("\n");
+ }
+ 
+ static void
+@@ -95,11 +95,20 @@
+     tot->tot_up += (st.tot_up = res[IPC_TVAL_TOTUP].v.num);
+     tot->tr_good += (st.tr_good = res[IPC_TVAL_TRGOOD].v.num);
+     if (cba->individual) {
+-        if (cba->names)
+-            printf("%.*s\n", (int)res[IPC_TVAL_NAME].v.str.l,
+-                res[IPC_TVAL_NAME].v.str.p);
++        switch (st.state) {
++            case IPC_TSTATE_INACTIVE: printf(BTPDCOL_STAT_INACT); break;
++            case IPC_TSTATE_START:    printf(BTPDCOL_STAT_START); break;
++            case IPC_TSTATE_STOP:     printf(BTPDCOL_STAT_STOP ); break;
++            case IPC_TSTATE_LEECH:    printf(BTPDCOL_STAT_LEECH); break;
++            case IPC_TSTATE_SEED:     printf(BTPDCOL_STAT_SEED ); break;
++        }
+         printf("%4u %c. ", st.num, tstate_char(st.state));
+         print_stat(&st);
++        if (cba->names) {
++            printf("  %.*s", (int)res[IPC_TVAL_NAME].v.str.l,
++                res[IPC_TVAL_NAME].v.str.p);
++        }
++        printf(BTPDCOL_STAT_ENDL "\n");
+     }
+ }
+ 
+@@ -117,13 +126,15 @@
+ again:
+     header--;
+     if (header == 0) {
++        printf(BTPDCOL_STAT_HEAD);
+         if (individual) {
+             header = 1;
+             printf(" NUM ST ");
+-        } else
++        } else {
+             header = 20;
+-        printf("  HAVE   DLOAD      RTDWN   ULOAD       RTUP   RATIO CONN"
+-            "  AVAIL  TR\n");
++        }
++        printf("  HAVE    SIZE   RATIO   DLOAD      RTDWN   ULOAD       "
++            "RTUP CONN  AVAIL  TR  NAME" BTPDCOL_STAT_ENDL "\n");
+     }
+ 
+     bzero(&cba.tot, sizeof(cba.tot));
+@@ -135,11 +146,11 @@
+         err = btpd_tget(ipc, tps, ntps, stkeys, nstkeys, stat_cb, &cba);
+     if (err != IPC_OK)
+         diemsg("command failed (%s).\n", ipc_strerror(err));
+-    if (names)
+-        printf("-------\n");
+     if (individual)
+         printf("        ");
++    printf(BTPDCOL_STAT_HEAD);
+     print_stat(&cba.tot);
++    printf(BTPDCOL_STAT_ENDL "\n");
+     if (seconds > 0) {
+         sleep(seconds);
+         goto again;

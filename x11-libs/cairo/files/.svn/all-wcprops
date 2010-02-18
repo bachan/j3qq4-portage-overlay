@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/785/trunk/x11-libs/cairo/files
+END
+cairo-02_no-private-symbol-export.patch
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/742/trunk/x11-libs/cairo/files/cairo-02_no-private-symbol-export.patch
+END
+cairo-1.6.4-libpng-api-change.patch
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/518/trunk/x11-libs/cairo/files/cairo-1.6.4-libpng-api-change.patch
+END
+cairo-1.8.2-memoryleak.patch
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/756/trunk/x11-libs/cairo/files/cairo-1.8.2-memoryleak.patch
+END
+cairo-1.4-newspr.patch.bz2
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/239/trunk/x11-libs/cairo/files/cairo-1.4-newspr.patch.bz2
+END
+cairo-1.8.0-lcdfilter.patch
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/612/trunk/x11-libs/cairo/files/cairo-1.8.0-lcdfilter.patch
+END
+cairo-04_lcd_filter.patch
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/742/trunk/x11-libs/cairo/files/cairo-04_lcd_filter.patch
+END
+cairo-1.5-newspr.patch.bz2
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/407/trunk/x11-libs/cairo/files/cairo-1.5-newspr.patch.bz2
+END
+cairo-1.6.4-0ubuntu1.diff.bz2
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/412/trunk/x11-libs/cairo/files/cairo-1.6.4-0ubuntu1.diff.bz2
+END
+cairo-1.6.4-freetype-Fake-bitmap-glyph-on-certain-condition.patch.bz2
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/415/trunk/x11-libs/cairo/files/cairo-1.6.4-freetype-Fake-bitmap-glyph-on-certain-condition.patch.bz2
+END
+cairo-05_respect-fontconfig.patch
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/785/trunk/x11-libs/cairo/files/cairo-05_respect-fontconfig.patch
+END
+cairo-1.8.4-optimise-invert.patch
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/756/trunk/x11-libs/cairo/files/cairo-1.8.4-optimise-invert.patch
+END

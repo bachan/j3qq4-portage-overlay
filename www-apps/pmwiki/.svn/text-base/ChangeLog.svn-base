@@ -1,0 +1,23 @@
+# ChangeLog for www-apps/pmwiki
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+  25 Nov 2007; Jakub Moc <jakub@gentoo.org> -pmwiki-2.2.0_beta63.ebuild,
+  +pmwiki-2.2.0_beta65.ebuild:
+  Version bump, remove old.
+
+  14 Sep 2007; Jakub Moc <jakub@gentoo.org> pmwiki-2.2.0_beta63.ebuild:
+  Use virtual/httpd-cgi for webserver dependency
+
+  08 Sep 2007; Jakub Moc <jakub@gentoo.org> +metadata.xml,
+  -pmwiki-2.2.0_beta16.ebuild, +pmwiki-2.2.0_beta63.ebuild:
+  Version bump, remove old. Fix dependencies, do not require apache
+  unconditionally. Quoting, install docs, cleanup.
+
+  04 Dec 2006; Emanuele Gentili <bathym@0x656d67.org>
+  +pmwiki-2.2.0_beta16.ebuild:
+  Version bump
+
+  18 Dec 2005; Renat Lumpau <rl03@gentoo.org> ChangeLog:
+  Initial ebuild wrt bug #96284.
+

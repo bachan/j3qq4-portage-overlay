@@ -1,0 +1,29 @@
+# ChangeLog for net-dns/vegadns
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+  14 Sep 2007; Jakub Moc <jakub@gentoo.org> vegadns-0.9.10.ebuild,
+  vegadns-1.1.6.ebuild:
+  Use virtual/httpd-cgi for webserver dependency
+
+  08 Sep 2007; Jakub Moc <jakub@gentoo.org> +vegadns-1.1.6.ebuild:
+  Add a testing branch version as well
+
+  08 Sep 2007; Jakub Moc <jakub@gentoo.org> files/postinstall-en.txt,
+  -vegadns-0.9.9.1.ebuild, +vegadns-0.9.10.ebuild:
+  Version bump, remove old vulnerable version. Fix dependencies, do not depend
+  on mysql but check for needed php features instead. This requires php with
+  USE=sessions as well. Fix LICENSE, fix SRC_URI. Quoting, ebuild cleanup.
+
+  16 Jan 2006; Lares Moreau <lares.moreau@gmail.com> ChangeLog:
+  Make repoman happy about whitespace.
+
+  16 Jan 2006; Lares Moreau <lares.moreau@gmail.com> ChangeLog:
+  Variable updates thanks to rl03.
+
+  16 Jan 2006; Lares Moreau <lares.moreau@gmail.com> ChangeLog:
+  Updated postinstall-en.txt to reflect original INSTALL doc
+
+  16 Jan 2006; Lares Moreau <lares.moreau@gmail.com> ChangeLog:
+  Requested ebuild
+

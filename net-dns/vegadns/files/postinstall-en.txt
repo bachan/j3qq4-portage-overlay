@@ -1,0 +1,39 @@
+0. PHP CONFIGURATION
+
+Make sure that both register_globals and safe_mode are turned OFF, 
+at least for the VirtualHost(s) you will be using this at.
+
+1. SETUP
+
+- Setup SQL db with following permissions
+	SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, ALTER
+
+- Change ${MY_INSTALLDIR}/src/config.php
+  as necessary to reflect your SQLdb and tinyDNS service.
+
+- Log into VegaDNS for the first time to create the tables, and update the
+  default login information by pointing your web browser to:
+
+  http://${VHOST_HOSTNAME}/${VHOST_APPDIR}
+
+  Next, you should edit "default_records" so that new domains have the proper
+  SOA record, and that they have name servers, etc.  Once this is done, you
+  can add or import a domain, then setup the data dumps in the next step.
+
+- To install the update-data.sh script (currently located in the
+  /usr/share/doc/${PF}), you will need to first edit the
+  VEGADNS variable to point to the correct url.  You may also need to update
+  the TINYDNSDIR variable if you used something other than /etc/tinydns.
+
+  Try exectuting the update-data.sh shell script.  Once you confirm that
+  this is working correctly, move update-data.sh to /usr/sbin/ and then
+  add it to cron to run every 10 minutes or so, whatever is appropriate.
+  You'll an entry to your crontab like so:
+
+  # Update tinydns with VegaDNS data
+  */10 * * * * /usr/sbin/update-data.sh
+
+NOTE: If intend to run update_data.sh from an IP other than 127.0.0.1, then
+you will need to add that IP to $trusted_hosts in config.php
+
+Also See: /usr/share/doc/${PF}/INSTALL

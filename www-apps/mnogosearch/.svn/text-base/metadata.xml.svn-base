@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<herd>web-apps</herd>
+<maintainer>
+	<email>pva@gentoo.org</email>
+	<name>Peter Volkov</name>
+</maintainer>
+<longdescription lang="en">
+	mnoGoSearch consists of a command line indexer and a search program which
+	can be run under Apache Web Server, or any other HTTP server supporting CGI
+	interface.  mnoGoSearch for Unix is distributed in sources and can be
+	compiled with a number of databases, depending on user's choice. It is known
+	to work on a wide variety of the modern Unix operating systems including
+	Linux, FreeBSD, Mac OSX, Solaris and others.
+</longdescription>
+</pkgmetadata>
+
