@@ -13,7 +13,7 @@ EGIT_REPO_URI="git://github.com/lidaobing/chmsee.git"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~x86 ~amd64"
 IUSE=""
 
 RDEPEND=">=dev-libs/glib-2.8:2
