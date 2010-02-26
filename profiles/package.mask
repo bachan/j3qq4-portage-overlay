@@ -1,11 +1,15 @@
 
-# Bachan <bachan@j3qq4.org> (15 Feb 2007)
-# masked pending execution and instant burn in hell
-=net-p2p/hrktorrent-9999*
+# Bachan <bachan@j3qq4.org> (26 Feb 2009)
+# masked svn version because it often has compile problems
+=app-text/apvlv-9999*
 
-# Bachan <bachan@j3qq4.org> (15 Feb 2007)
+# Bachan <bachan@j3qq4.org> (15 Feb 2009)
 # masked guilty bastard for its sins
 =x11-wm/awesome-9999*
+
+# Bachan <bachan@j3qq4.org> (15 Feb 2009)
+# masked pending execution and instant burn in hell
+=net-p2p/hrktorrent-9999*
 
 # Kevin G Fourie <kevin@4e.co.za> (07 Sep 2007)
 # masked pending testing 

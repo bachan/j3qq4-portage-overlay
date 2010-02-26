@@ -2,20 +2,15 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI="2"
-
-inherit autotools subversion toolchain-funcs
-
-WANT_AUTOMAKE="1.7"
-ESVN_REPO_URI="http://apvlv.googlecode.com/svn/trunk"
+inherit eutils
 
 DESCRIPTION="a PDF Viewer which behaviors like Vim"
 HOMEPAGE="http://code.google.com/p/apvlv/"
-SRC_URI=""
+SRC_URI="http://apvlv.googlecode.com/files/${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~x86"
 IUSE="debug"
 
 RDEPEND=">=x11-libs/gtk+-2.6
@@ -38,3 +33,4 @@ src_install() {
 	emake DESTDIR="${D}" install || die "install failed"
 	dodoc AUTHORS NEWS README THANKS
 }
+
