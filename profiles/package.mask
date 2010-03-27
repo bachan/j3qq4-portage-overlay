@@ -15,4 +15,6 @@
 # masked pending testing 
 >=www-apps/knowledgetree-3.5
 
-
+# Bachan <bachan@j3qq4.org> (26 Mar 2010)
+# masked to use official version
+>=www-client/mozilla-firefox-9999
