@@ -11,10 +11,7 @@ media-libs/fontconfig:cleartype - Add ClearType-style behavior for sub-pixel hin
 media-libs/fontconfig:ubuntu - Enables patches used in Ubuntu
 media-libs/freetype:cleartype - Add ClearType-style behavior for sub-pixel hinting. Patch taken from Arch Linux
 media-libs/freetype:ubuntu - Enables patches used in Ubuntu
-net-mail/postfixadmin:extras - Install some extra script examples.
-net-mail/postfixadmin:vacation - Enable support for virtual vacation feature.
 net-p2p/btpd:bachan - Enables color output and removes tiny screen feature, so it can be comfortly usable on normal screen
-www-apps/ackertodo:email-notification - Provide support for cron-based email notification
 www-apps/mnogosearch:indexer - Enable indexing support (requires a database backend)
 www-apps/mnogosearch:mecab - Enable support for mecab Japanese morphological system
 www-apps/mnogosearch:msoffice - Enable support for MS Office formats (Word, Excel)
