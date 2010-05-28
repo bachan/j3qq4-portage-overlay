@@ -7,16 +7,10 @@
 
 # Keep it sorted.
 
-media-libs/fontconfig:cleartype - Add ClearType-style behavior for sub-pixel hinting. Patch taken from Arch Linux
-media-libs/fontconfig:ubuntu - Enables patches used in Ubuntu
-media-libs/freetype:cleartype - Add ClearType-style behavior for sub-pixel hinting. Patch taken from Arch Linux
-media-libs/freetype:ubuntu - Enables patches used in Ubuntu
 net-p2p/btpd:bachan - Enables color output and removes tiny screen feature, so it can be comfortly usable on normal screen
 www-apps/mnogosearch:indexer - Enable indexing support (requires a database backend)
 www-apps/mnogosearch:mecab - Enable support for mecab Japanese morphological system
 www-apps/mnogosearch:msoffice - Enable support for MS Office formats (Word, Excel)
-x11-libs/cairo:cleartype - Add ClearType-style behavior for sub-pixel hinting. Patch taken from Arch Linux
-x11-libs/cairo:ubuntu - Enables patches used in Ubuntu
 x11-libs/libXft:cleartype - Add ClearType-style behavior for sub-pixel hinting. Patch taken from Arch Linux
 x11-libs/libXft:ubuntu - Enables patches used in Ubuntu
 
