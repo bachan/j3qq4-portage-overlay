@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repositories version="1.0">
+ <repo priority="50" quality="experimental" status="unofficial">
+  <name>j3qq4</name>
+  <description>collection of ebuilds by bachan</description>
+  <owner>
+   <email>bachan@j3qq4.org</email>
+  </owner>
+  <source type="git">git://github.com/bachan/j3qq4-portage-overlay.git</source>
+  <feed>http://github.com/bachan/j3qq4-portage-overlay/commits/master.atom</feed>
+ </repo>
+</repositories>
