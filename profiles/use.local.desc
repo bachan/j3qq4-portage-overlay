@@ -11,6 +11,7 @@ net-p2p/btpd:bachan - Enables color output and removes tiny screen feature, so i
 www-apps/mnogosearch:indexer - Enable indexing support (requires a database backend)
 www-apps/mnogosearch:mecab - Enable support for mecab Japanese morphological system
 www-apps/mnogosearch:msoffice - Enable support for MS Office formats (Word, Excel)
+www-client/surf:extras - Enables various patches
 x11-libs/libXft:cleartype - Add ClearType-style behavior for sub-pixel hinting. Patch taken from Arch Linux
 x11-libs/libXft:ubuntu - Enables patches used in Ubuntu
 
