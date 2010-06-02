@@ -1,8 +1,5 @@
-# Bachan <bachan@j3qq4.org> (26 Feb 2009)
-# masked as repo updated pkgs
 =app-misc/screen-9999*
 =app-text/chmsee-9999*
 =app-text/apvlv-9999*
 =www-apps/cgit-devel-9999*
 =www-apps/fcgiwrap-9999*
-
