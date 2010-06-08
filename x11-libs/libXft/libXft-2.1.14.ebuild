@@ -5,8 +5,9 @@
 inherit x-modular flag-o-matic
 
 DESCRIPTION="X.Org Xft library"
+
 KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-fbsd"
-IUSE="+cleartype ubuntu"
+IUSE="bindist"
 
 RDEPEND="x11-libs/libXrender
 	x11-libs/libX11
@@ -31,7 +32,7 @@ src_unpack() {
 	unpack ${A}
 	cd "${S}"/src
 
-	if use cleartype; then
+	if ! use bindist; then
 		# ClearType-like patches applied by ArchLinux
 		epatch "${FILESDIR}"/${PN}-2.1.14-cleartype.patch
 	fi
