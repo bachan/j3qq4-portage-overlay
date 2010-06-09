@@ -11,14 +11,10 @@ MOD_DIR="brainworks"
 inherit games games-mods
 
 HOMEPAGE="http://code.google.com/p/quake3-brainworks/"
-SRC_URI="brainworks-1-0-0.zip"
+SRC_URI="http://quake3-brainworks.googlecode.com/svn/trunk/brainworks-1-0-0.zip"
 
 LICENSE="freedist"
 KEYWORDS="amd64 ~ppc x86"
 IUSE="dedicated opengl"
-RESTRICT="strip mirror fetch"
+RESTRICT="strip mirror"
 
-pkg_nofetch() {
-	einfo "Go to http://quake3-brainworks.googlecode.com/svn/trunk/ and"
-	einfo "download ${A}, then put it into ${DISTDIR}."
-}
