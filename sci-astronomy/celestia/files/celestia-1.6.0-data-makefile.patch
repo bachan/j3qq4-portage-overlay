@@ -1,0 +1,13 @@
+diff -uNr celestia-1.6.0/data/Makefile.am celestia-1.6.0-work/data/Makefile.am
+--- celestia-1.6.0/data/Makefile.am	2009-06-22 19:48:06.000000000 +0400
++++ celestia-1.6.0-work/data/Makefile.am	2010-06-12 20:15:10.992029988 +0400
+@@ -15,8 +15,7 @@
+ 	$(wildcard *.xyz) \
+ 	$(wildcard *.xyzv) \
+ 	$(wildcard *.dsc) \
+-	$(wildcard *.stc) \
+-	stars.dat
++	$(wildcard *.stc)
+ 
+ EXTRA_DIST = \
+ 	$(pkgdata_DATA) \
