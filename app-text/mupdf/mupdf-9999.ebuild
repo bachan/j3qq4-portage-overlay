@@ -5,7 +5,7 @@ EAPI=3
 
 DESCRIPTION="Lightweight PDF viewer and toolkit written in portable C"
 HOMEPAGE="http://ccxvii.net/mupdf/"
-SRC_URI="http://ccxvii.net/${PN}/download/${PN}-${PR}.tar.gz"
+SRC_URI="http://ccxvii.net/${PN}/download/snapshots/${PN}-latest.tar.gz"
 S="${WORKDIR}/${PN}"
 
 LICENSE="GPL-3"
@@ -34,13 +34,5 @@ src_install() {
 	dobin mupdf cmapdump fontdump pdfshow pdfdraw pdfclean pdfextract
 	newbin pdfinfo pdfinfo.mupdf
 	dolib libmupdf.a
-
-	#make build=release prefix=/usr/local [pregen=dir] install
-	#emake build=release prefix=/usr install DESTDIR="${D}" || die "emake"
-	#dodoc COPYING README || die "dodoc"
-	#cd build/
-	#dobin mupdf cmapdump fontdump pdfshow pdfdraw pdfclean pdfextract || die "dobin"
-	#newbin pdfinfo pdfinfo.mupdf || die "newbin"
-	#dolib.a *.a || die "dolib"
 }
 
