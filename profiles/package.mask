@@ -2,5 +2,6 @@
 =app-text/apvlv-9999*
 =app-text/chmsee-9999*
 =app-text/mupdf-9999*
+=media-gfx/darktable-9999*
 =www-apps/cgit-devel-9999*
 =www-apps/fcgiwrap-9999*
