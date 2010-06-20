@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Bibble Pro
+Comment=Bibble Pro raw photo editor
+Exec=bibblepro
+Icon=bibblelogo
+Terminal=false
+Type=Application
+Categories=Application;Graphics;

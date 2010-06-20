@@ -1,0 +1,10 @@
+# ChangeLog for media-plugins/cammy
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Id: ChangeLog 1196 2008-10-11 10:37:04Z casta $
+
+  11 Oct 2008; Guillaume Castagnino <casta@xwing.info> cammy-1.1a.ebuild:
+  fix repoman warning
+
+  10 Oct 2008; Guillaume Castagnino <casta@xwing.info> +cammy-1.1a.ebuild:
+  initial revision, pointed by nabla on bibble forum
+

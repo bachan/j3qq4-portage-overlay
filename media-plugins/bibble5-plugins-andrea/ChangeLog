@@ -1,0 +1,20 @@
+# ChangeLog for media-plugins/bibble5-plugins-andrea
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Id: ChangeLog 1561 2010-01-28 20:51:03Z casta $
+
+*bibble5-plugins-andrea-1.0a (28 Jan 2010)
+
+  28 Jan 2010; Guillaume Castagnino <casta@xwing.info>
+  +bibble5-plugins-andrea-1.0a.ebuild:
+  add b 5.01 version
+
+  28 Jan 2010; Guillaume Castagnino <casta@xwing.info>
+  bibble5-plugins-andrea-1.0.ebuild:
+  add blocker and fetch restriction
+
+*bibble5-plugins-andrea-1.0 (16 Jan 2010)
+
+  16 Jan 2010; Guillaume Castagnino <casta@xwing.info> -andrea-1.0.ebuild,
+  +bibble5-plugins-andrea-1.0.ebuild:
+  add andrea plugin
+

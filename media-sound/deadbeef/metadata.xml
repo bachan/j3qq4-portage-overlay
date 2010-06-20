@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<herd></herd>
+	<maintainer>
+		<email>casta@xwing.info</email>
+		<name>Guillaume Castagnino</name>
+	</maintainer>
+	<longdescription lang="en">
+	</longdescription>
+	<use>
+		<flag name="lastfm"></flag>
+		<flag name="artwork"></flag>
+		<flag name="hotkeys"></flag>
+		<flag name="supereq"></flag>
+		<flag name="sid"></flag>
+		<flag name="ffap"></flag>
+		<flag name="vtx"></flag>
+		<flag name="adplug"></flag>
+		<flag name="gme"></flag>
+		<flag name="dumb"></flag>
+		<flag name="nullout"></flag>
+	</use>
+</pkgmetadata>
+

@@ -7,6 +7,27 @@
 
 # Keep it sorted.
 
+media-gfx/bibblepro-bin:andrea - Enable Andrea plugin support
+media-gfx/bibblepro-bin:andypro - Enable AndyPRO plugin support (avoid collisions)
+media-gfx/bibblepro-bin:anselpro - Enable AnselPRO plugin support
+media-gfx/bibblepro-bin:brenda - Enable Brenda plugin support
+media-gfx/bibblepro-bin:cammy - Enable Cammy plugin support
+media-gfx/bibblepro-bin:color-popper - Enable Color Popper plugin support
+media-gfx/bibblepro-bin:contrast-control - Enable Contrast Control plugin support
+media-gfx/bibblepro-bin:dinkypro - Enable DinkyPRO plugin support
+media-gfx/bibblepro-bin:foxypro - Enable FoxyPRO plugin support
+media-gfx/bibblepro-bin:ginapro - Enable GinaPRO plugin support
+media-gfx/bibblepro-bin:gradpro - Enable GradPro plugin support
+media-gfx/bibblepro-bin:mattypro - Enable MattyPRO plugin support
+media-gfx/bibblepro-bin:ndgrad - Enable NDgrad plugin support
+media-gfx/bibblepro-bin:percypro - Enable PercyPRO plugin support
+media-gfx/bibblepro-bin:roypro - Enable RoyPRO plugin support
+media-gfx/bibblepro-bin:sadiepro - Enable SadiePRO plugin support
+media-gfx/bibblepro-bin:shadypro - Enable ShadyPRO plugin support
+media-gfx/bibblepro-bin:sharpiepro - Enable SharpiePRO plugin support
+media-gfx/bibblepro-bin:siggypro - Enable SiggyPRO plugin support
+media-gfx/bibblepro-bin:spectrum - Enable Spectrum plugin support
+media-gfx/bibblepro-bin:tonypro - Enable TonyPRO plugin support
 net-p2p/btpd:bachan - Enables color output and removes tiny screen feature, so it can be comfortly usable on normal screen
 www-apps/mnogosearch:indexer - Enable indexing support (requires a database backend)
 www-apps/mnogosearch:mecab - Enable support for mecab Japanese morphological system

@@ -1,0 +1,21 @@
+#!/sbin/runscript
+# Copyright 1999-2003 Gentoo Technologies, Inc.
+# Distributed under the terms of the GNU General Public License, v2 or later
+
+opts="${opts}"
+
+depend() {
+	need net
+}
+
+start() {
+	ebegin "Starting xmms2"
+	start-stop-daemon --start -c ${XMMS2_USER} --exec ${XMMS2_PREFIX}/bin/xmms2d -q -- -d &>/dev/null
+	eend
+}
+
+stop() {
+	ebegin "Stopping xmms2"
+	start-stop-daemon --start -c ${XMMS2_USER} --exec ${XMMS2_PREFIX}/bin/xmms2 -- quit &1>/dev/null
+	eend $?
+}

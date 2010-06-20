@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<herd>no-herd</herd>
+	<maintainer>
+		<email>casta@xwing.info</email>
+		<name>Guillaume Castagnino</name>
+	</maintainer>
+	<use>
+		<flag name="andypro">Enable AndyPRO plugin support and avoid collisions
+			with <pkg>media-plugins/andypro</pkg></flag>
+		<flag name="roypro">Enable RoyPRO plugin support and avoid collisions
+			with <pkg>media-plugins/roypro</pkg></flag>
+		<flag name="ginapro">Enable GinaPRO plugin support and avoid collisions
+			with <pkg>media-plugins/ginapro</pkg></flag>
+		<flag name="siggypro">Enable SiggyPRO plugin support and avoid
+			collisions with <pkg>media-plugins/siggypro</pkg></flag>
+		<flag name="sadiepro">Enable SadiePRO plugin support and avoid
+			collisions with <pkg>media-plugins/sadiepro</pkg></flag>
+		<flag name="tonypro">Enable TonyPRO plugin support and avoid collisions
+			with <pkg>media-plugins/tonypro</pkg></flag>
+		<flag name="ndgrad">Enable NDgrad plugin support</flag>
+		<flag name="spectrum">Enable Spectrum plugin support</flag>
+		<flag name="color-popper">Enable Color Popper plugin support</flag>
+		<flag name="contrast-control">Enable Contrast Control plugin support</flag>
+		<flag name="anselpro">Enable AnselPRO plugin support</flag>
+		<flag name="foxypro">Enable FoxyPRO plugin support</flag>
+		<flag name="percypro">Enable PercyPRO plugin support</flag>
+		<flag name="shadypro">Enable ShadyPRO plugin support</flag>
+		<flag name="sharpiepro">Enable SharpiePRO plugin support</flag>
+		<flag name="gradpro">Enable GradPro plugin support</flag>
+		<flag name="dinkypro">Enable DinkyPRO plugin support</flag>
+		<flag name="mattypro">Enable MattyPRO plugin support</flag>
+		<flag name="cammy">Enable Cammy plugin support</flag>
+		<flag name="andrea">Enable Andrea plugin support</flag>
+		<flag name="brenda">Enable Brenda plugin support</flag>
+	</use>
+</pkgmetadata>
+

@@ -1,0 +1,21 @@
+# ChangeLog for app-mobilephone/gammu
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*gammu-1.27.91 (09 Feb 2010)
+
+  09 Feb 2010; Ycarus <ycarus@zugaina.org> +gammu-1.27.91.ebuild,
+  +files/gammu-skip-locktest.patch:
+  Bump to 1.27.91
+
+  10 Jul 2009; Ycarus <ycarus@zugaina.org> +gammu-1.25.0.ebuild:
+  Bump to 1.25.0
+
+  26 Jun 2009; Ycarus <ycarus@zugaina.org> +gammu-1.24.92.ebuild:
+  Bump to 1.24.92
+
+*gammu-1.24.91 (21 Jun 2009)
+
+  21 Jun 2009; Ycarus <ycarus@zugaina.org> +gammu-1.24.91.ebuild:
+  Bump to 1.24.91
+
