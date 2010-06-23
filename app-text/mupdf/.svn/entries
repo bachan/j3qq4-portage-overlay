@@ -1,19 +1,15 @@
 10
 
 dir
-1152
-http://gentoo-china-overlay.googlecode.com/svn/trunk/app-text/mupdf
-http://gentoo-china-overlay.googlecode.com/svn
+10818
+svn://overlays.gentoo.org/proj/sunrise/reviewed/app-text/mupdf
+svn://overlays.gentoo.org/proj/sunrise
 
 
 
-2009-10-25T12:49:45.266162Z
-1069
-coderoar
-
-
-
-
+2010-06-07T17:15:19.698326Z
+10668
+hwoarang
 
 
 
@@ -24,7 +20,11 @@ coderoar
 
 
 
-56a51851-6f1b-0410-94cf-eb22446afc7d
+
+
+
+
+12608f7e-a915-0410-b2f3-ce240db1b126
 
 metadata.xml
 file
@@ -32,11 +32,11 @@ file
 
 
 
-2009-11-29T21:35:34.000000Z
-26b4b081d538c195dc39bcb2ec8e6f3a
-2009-10-25T12:49:45.266162Z
-1069
-coderoar
+2010-06-20T13:20:04.000000Z
+0a0f36e2ffacdb9fc83d7df5cbb2bae5
+2010-04-19T07:25:49.886006Z
+10471
+jlec
 
 
 
@@ -58,19 +58,19 @@ coderoar
 
 
 
-161
+229
 
-mupdf-20090707.ebuild
+mupdf-0.6.ebuild
 file
 
 
 
 
-2009-11-29T21:35:34.000000Z
-23547bdae4752039c06c772c33596fa9
-2009-08-29T05:41:25.939395Z
-983
-gogonkt
+2010-06-20T13:20:04.000000Z
+1d248ca511fd1302c91b4b3120d37408
+2010-06-07T17:15:19.698326Z
+10668
+hwoarang
 
 
 
@@ -92,7 +92,10 @@ gogonkt
 
 
 
-1411
+1469
+
+files
+dir
 
 Manifest
 file
@@ -100,11 +103,11 @@ file
 
 
 
-2009-11-29T21:35:34.000000Z
-8c9b5c07384ea1e80be764228841f535
-2009-10-25T12:49:45.266162Z
-1069
-coderoar
+2010-06-20T13:20:04.000000Z
+546446923486bd531b0547d2d6540b8c
+2010-06-07T17:15:19.698326Z
+10668
+hwoarang
 
 
 
@@ -126,5 +129,39 @@ coderoar
 
 
 
-598
+975
+
+ChangeLog
+file
+
+
+
+
+2010-06-20T13:20:04.000000Z
+24fed6c4ea6cfe71fca9fda54ba4a190
+2010-06-07T17:15:19.698326Z
+10668
+hwoarang
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1049
 
