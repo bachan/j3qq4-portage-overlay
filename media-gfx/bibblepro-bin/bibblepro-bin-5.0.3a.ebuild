@@ -1,6 +1,6 @@
 # Copyright 1999-2010 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id: bibblepro-bin-5.0.3a.ebuild 1602 2010-04-19 09:45:51Z casta $
+# $Id: bibblepro-bin-5.0.3a.ebuild 1646 2010-06-28 19:08:34Z casta $
 
 EAPI=2
 
@@ -27,6 +27,9 @@ RDEPEND="virtual/libc
 	sys-libs/zlib
 	dev-libs/expat
 	dev-libs/glib:2
+	x86? (
+		media-libs/libpng:1.2
+	)
 	amd64? (
 		app-emulation/emul-linux-x86-baselibs
 		app-emulation/emul-linux-x86-xlibs

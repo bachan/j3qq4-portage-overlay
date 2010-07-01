@@ -1,7 +1,10 @@
-collection of ebuilds by bachan
+yet another collection of ebuilds
 bachan@j3qq4.org
 
 http://www.j3qq4.org/src/portage-overlay/
 http://www.j3qq4.org/src/portage-overlay-distfiles/
 http://github.com/bachan/j3qq4-portage-overlay
+
+You may use this URL for layman -f option:
+http://www.j3qq4.org/src/portage-overlay/repositories.xml
 

@@ -1,0 +1,7 @@
+#!/bin/sh
+
+museekd &
+muscand &
+QT_IM_MODULE=xim museeq
+killall museekd
+killall muscand

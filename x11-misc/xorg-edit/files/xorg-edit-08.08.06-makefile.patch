@@ -1,0 +1,85 @@
+--- xorgedit/Makefile	2008-08-06 20:29:54.000000000 +0200
++++ xorgedit/Makefile.new	2009-08-16 12:23:56.000000000 +0200
+@@ -18,26 +18,26 @@
+ INCLUDES = -I../
+ 
+ # C++ compiler flags (-g -O2 -Wall)
+-CXXFLAGS = `wx-config --cxxflags` -O3
++CXXFLAGS += `wx-config --cxxflags`
+ 
+ # compiler
+-CXX = `wx-config --cxx`
++CXX ?= `wx-config --cxx`
+ 
+ # library paths
+ LIBS = -L../ -lm -lxorgedit
+ 
+ # compile flags
+-LDFLAGS = `wx-config --libs`
++WXLIBS = `wx-config --libs`
+ 
+ # implementation
+ 
+ all: $(OUTPUT)
+ 
+ $(OUTPUT): $(OBJECTS)
+-	$(CXX) -o $(OUTPUT) $(OBJECTS) $(LIBS) $(LDFLAGS)
++	$(CXX) $(LDFLAGS) -o $(OUTPUT) $(OBJECTS) $(LIBS) $(WXLIBS)
+ 
+-$(OBJECTS): $(SOURCES)
+-	$(CXX) $(INCLUDES) -c $(SOURCES) $(CXXFLAGS)
++%.o: %.c
++	$(CXX) $(INCLUDES) -c $@ $(CXXFLAGS) -o obj/$<
+ 
+ clean:
+ 	rm -f $(OBJECTS) $(OUTPUT)
+--- libxorgedit/Makefile	2008-08-05 18:46:23.000000000 +0200
++++ libxorgedit/Makefile.new	2009-08-16 12:21:32.000000000 +0200
+@@ -6,10 +6,10 @@
+ OUTPUT = ../libxorgedit.a
+ 
+ # compiler
+-CXX = g++
++CXX ?= g++
+ 
+ # C++ compiler flags (-g -O2 -Wall)
+-CXXFLAGS = -Wall -Wextra -O3
++#CXXFLAGS = -Wall -Wextra -O3
+ 
+ # implementation
+ 
+--- Makefile	2008-08-06 20:29:24.000000000 +0200
++++ Makefile.new	2009-08-16 13:01:36.000000000 +0200
+@@ -8,10 +8,11 @@
+ 
+ # implementation
+ all:
+-	cd libxorgedit && make && cd ../xorgedit && make && cd ..
++	+make -C libxorgedit
++	+make -C xorgedit
+ 
+-install:
+-	cd libxorgedit && make && cd ../xorgedit && make install && cd ..
++install: all
++	+make -C xorgedit install
+ 
+ clean:
+ 	cd libxorgedit && make clean && cd ../xorgedit && make clean && cd ..
+--- xorgedit/Makefile	2009-08-16 13:05:03.000000000 +0200
++++ xorgedit/Makefile.new	2009-08-16 13:06:24.000000000 +0200
+@@ -43,10 +43,11 @@
+ 	rm -f $(OBJECTS) $(OUTPUT)
+ 
+ install: all
+-	mkdir -p $(INSTALLPATH)/lib/xorgedit/
+-	cp -r ../options $(INSTALLPATH)/lib/xorgedit/
+-	cp -r ../de_DE $(INSTALLPATH)/lib/xorgedit/
+-	cp $(OUTPUT) $(INSTALLPATH)/lib/xorgedit/
++	mkdir -p $(DESTDIR)/$(INSTALLPATH)/xorgedit/
++	cp -r ../options $(DESTDIR)/$(INSTALLPATH)/xorgedit/
++	cp -r ../de_DE $(DESTDIR)/$(INSTALLPATH)/xorgedit/
++	mkdir -p $(DESTDIR)/$(INSTALLPATH)/../bin
++	cp $(OUTPUT) $(DESTDIR)/$(INSTALLPATH)/../bin/
+ 
+ uninstall:
+ 	rm -rf $(INSTALLPATH)/lib/xorgedit/
