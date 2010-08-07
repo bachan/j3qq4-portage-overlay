@@ -1,0 +1,4 @@
+#!/bin/sh
+cd "/opt/cs2d"
+[ -d "${HOME}/.cs2d" ] || cp -r "/opt/cs2d/sys" "${HOME}/.cs2d"
+./CounterStrike2D -nointro -sys "${HOME}/.cs2d" -gl -win -w 1280 -h 800 "$@"

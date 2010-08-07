@@ -1,6 +1,13 @@
 # ChangeLog for media-plugins/bibble5-plugins-brenda
 # Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
-# $Id: ChangeLog 1575 2010-02-12 22:25:14Z casta $
+# $Id: ChangeLog 1659 2010-07-10 09:49:49Z casta $
+
+*bibble5-plugins-brenda-1.0.1 (10 Jul 2010)
+
+  10 Jul 2010; Guillaume Castagnino <casta@xwing.info>
+  -bibble5-plugins-brenda-1.0.ebuild, +bibble5-plugins-brenda-1.0.1.ebuild,
+  -bibble5-plugins-brenda-1.0a.ebuild:
+  update brenda to new ebuild format
 
 *bibble5-plugins-brenda-1.0a (12 Feb 2010)
 

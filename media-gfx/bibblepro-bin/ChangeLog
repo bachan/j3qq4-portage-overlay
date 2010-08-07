@@ -1,6 +1,10 @@
 # ChangeLog for media-gfx/bibblepro-bin
 # Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
-# $Id: ChangeLog 1646 2010-06-28 19:08:34Z casta $
+# $Id: ChangeLog 1654 2010-07-10 09:23:52Z casta $
+
+  10 Jul 2010; Guillaume Castagnino <casta@xwing.info>
+  -bibblepro-bin-5.0.3a.ebuild:
+  remove old version
 
   28 Jun 2010; Guillaume Castagnino <casta@xwing.info>
   bibblepro-bin-5.0.3a.ebuild:

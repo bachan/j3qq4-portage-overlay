@@ -31,6 +31,8 @@ media-gfx/bibblepro-bin:tonypro - Enable TonyPRO plugin support
 net-p2p/btpd:bachan - Enable color output and remove tiny screen feature, so it can be comfortly usable on normal screen
 net-p2p/museek+:client - Install a set of python tools, featuring commandline interface and a primitive curses chat client
 net-p2p/museek+:extras - Install a set of cli and gui tools for configuring museek components
+net-p2p/museek+:mucipher - Install pymucipher module (can replace pycrypto in murmur)
+Use mucipher instead of pycrypto for cryptography in murmur
 net-p2p/museek+:server - Install museekd server daemon (if unsure, say yes)
 www-apps/mnogosearch:indexer - Enable indexing support (requires a database backend)
 www-apps/mnogosearch:mecab - Enable support for mecab Japanese morphological system

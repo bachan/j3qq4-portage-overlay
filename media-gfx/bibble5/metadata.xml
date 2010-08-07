@@ -6,5 +6,8 @@
 		<email>casta@xwing.info</email>
 		<name>Guillaume Castagnino</name>
 	</maintainer>
+	<use>
+		<flag name="brenda">Enable Brenda plugin support</flag>
+	</use>
 </pkgmetadata>
 

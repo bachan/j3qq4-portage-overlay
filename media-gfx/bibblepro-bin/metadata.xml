@@ -32,8 +32,6 @@
 		<flag name="dinkypro">Enable DinkyPRO plugin support</flag>
 		<flag name="mattypro">Enable MattyPRO plugin support</flag>
 		<flag name="cammy">Enable Cammy plugin support</flag>
-		<flag name="andrea">Enable Andrea plugin support</flag>
-		<flag name="brenda">Enable Brenda plugin support</flag>
 	</use>
 </pkgmetadata>
 
