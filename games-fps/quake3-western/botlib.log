@@ -1,0 +1,246 @@
+item team_redobelisk has modelindex 0item team_blueobelisk has modelindex 0item team_neutralobelisk has modelindex 0item item_botroam has modelindex 0entity worldspawn unknown item
+entity light unknown item
+entity target_location unknown item
+entity target_location unknown item
+entity target_location unknown item
+entity target_location unknown item
+entity info_player_deathmatch unknown item
+entity light unknown item
+entity info_player_deathmatch unknown item
+entity info_player_deathmatch unknown item
+entity info_player_deathmatch unknown item
+entity info_player_deathmatch unknown item
+entity light unknown item
+entity light unknown item
+entity light unknown item
+entity light unknown item
+entity misc_model unknown item
+entity light unknown item
+entity light unknown item
+entity misc_model unknown item
+entity misc_model unknown item
+entity misc_model unknown item
+entity misc_model unknown item
+entity misc_model unknown item
+entity target_position unknown item
+entity trigger_push unknown item
+entity info_player_deathmatch unknown item
+entity func_door unknown item
+entity func_door unknown item
+entity info_player_deathmatch unknown item
+entity light unknown item
+entity light unknown item
+entity func_door unknown item
+entity func_door unknown item
+entity func_door unknown item
+entity func_door unknown item
+entity func_door unknown item
+entity func_door unknown item
+entity func_door unknown item
+entity func_door unknown item
+entity func_door unknown item
+entity func_door unknown item
+entity light unknown item
+entity misc_model unknown item
+entity misc_model unknown item
+entity light unknown item
+entity light unknown item
+entity light unknown item
+entity light unknown item
+entity light unknown item
+entity light unknown item
+entity light unknown item
+entity light unknown item
+entity light unknown item
+entity light unknown item
+entity light unknown item
+entity light unknown item
+entity light unknown item
+entity light unknown item
+entity light unknown item
+entity light unknown item
+entity light unknown item
+entity light unknown item
+entity target_position unknown item
+entity info_player_intermission unknown item
+entity misc_model unknown item
+entity light unknown item
+entity info_null unknown item
+entity light unknown item
+entity info_null unknown item
+entity light unknown item
+entity light unknown item
+entity light unknown item
+entity info_null unknown item
+entity light unknown item
+entity target_position unknown item
+entity trigger_push unknown item
+entity target_position unknown item
+entity trigger_push unknown item
+entity target_position unknown item
+entity trigger_push unknown item
+entity light unknown item
+entity target_position unknown item
+entity light unknown item
+entity light unknown item
+entity target_position unknown item
+entity light unknown item
+entity misc_model unknown item
+entity light unknown item
+entity target_position unknown item
+entity light unknown item
+entity light unknown item
+entity target_position unknown item
+entity light unknown item
+entity misc_model unknown item
+entity misc_model unknown item
+entity misc_model unknown item
+entity misc_model unknown item
+entity target_position unknown item
+entity light unknown item
+entity target_position unknown item
+entity light unknown item
+entity target_position unknown item
+entity light unknown item
+entity target_position unknown item
+entity light unknown item
+entity light unknown item
+entity light unknown item
+entity light unknown item
+entity light unknown item
+entity light unknown item
+entity light unknown item
+entity light unknown item
+entity misc_model unknown item
+entity light unknown item
+entity light unknown item
+entity target_position unknown item
+entity light unknown item
+entity light unknown item
+entity target_position unknown item
+entity light unknown item
+entity misc_model unknown item
+entity light unknown item
+entity misc_model unknown item
+entity light unknown item
+entity light unknown item
+entity misc_model unknown item
+entity light unknown item
+entity light unknown item
+entity light unknown item
+entity light unknown item
+entity light unknown item
+entity light unknown item
+entity light unknown item
+entity light unknown item
+entity info_player_deathmatch unknown item
+entity info_player_deathmatch unknown item
+entity light unknown item
+entity light unknown item
+entity target_position unknown item
+entity light unknown item
+entity light unknown item
+entity target_position unknown item
+entity light unknown item
+entity target_location unknown item
+entity target_location unknown item
+entity target_location unknown item
+entity target_location unknown item
+entity target_location unknown item
+entity target_location unknown item
+entity target_location unknown item
+entity target_location unknown item
+entity target_location unknown item
+entity target_location unknown item
+entity target_location unknown item
+entity target_location unknown item
+entity target_location unknown item
+entity target_location unknown item
+entity target_location unknown item
+entity target_location unknown item
+entity target_location unknown item
+entity target_location unknown item
+entity target_location unknown item
+entity target_location unknown item
+entity target_location unknown item
+entity target_location unknown item
+entity target_location unknown item
+entity target_location unknown item
+entity target_location unknown item
+entity target_location unknown item
+entity target_location unknown item
+entity target_location unknown item
+entity target_location unknown item
+entity target_location unknown item
+entity target_location unknown item
+entity target_location unknown item
+entity func_timer unknown item
+entity target_speaker unknown item
+entity target_speaker unknown item
+entity func_timer unknown item
+entity target_speaker unknown item
+entity target_speaker unknown item
+entity func_timer unknown item
+entity target_speaker unknown item
+entity target_speaker unknown item
+entity func_timer unknown item
+entity target_speaker unknown item
+entity light unknown item
+entity light unknown item
+bots/anarki_c.cskill 0
+{
+    0 Anarki
+    1 male
+    2 0.833333
+    3 bots/anarki_w.c
+    4 0.750000
+    5 180
+    6 1.666667
+    7 0.833333
+    8 0.433333
+    9 0.566667
+   10 0.633333
+   11 0.633333
+   12 0.633333
+   13 0.633333
+   14 0.633333
+   15 0.633333
+   16 0.833333
+   17 0.633333
+   18 0.633333
+   19 0.633333
+   20 0.633333
+   21 bots/anarki_t.c
+   22 anarki
+   23 400
+   24 0.375000
+   25 0.500000
+   26 0.500000
+   27 0.500000
+   28 0.500000
+   29 0.500000
+   30 0.500000
+   31 0.150000
+   32 0.500000
+   33 0.500000
+   34 0.500000
+   35 0.183333
+   36 0.000000
+   37 0.833333
+   38 0.833333
+   39 0.166667
+   40 bots/anarki_i.c
+   41 0.833333
+   42 0.166667
+   43 0.833333
+   44 0.500000
+   45 0.833333
+   46 0.666667
+   47 0.700000
+   48 0.000000
+}
+item info 7 "weapon_gauntlet" has no fuzzy weight
+item info 16 "weapon_grapplinghook" has no fuzzy weight
+item info 49 "team_redobelisk" has no fuzzy weight
+item info 50 "team_blueobelisk" has no fuzzy weight
+item info 51 "team_neutralobelisk" has no fuzzy weight
