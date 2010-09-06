@@ -9,25 +9,26 @@ HOMEPAGE="http://www.guitar-pro.com/"
 SRC_URI="${PN}-rev${PV}.deb"
 
 LICENSE="Arobas-EULA"
-SLOT="0"
+SLOT="6"
 KEYWORDS="~x86"
 IUSE=""
 RESTRICT="strip mirror fetch"
 
-DEPEND="" # XXX
-RDEPEND="${DEPEND}
-	media-libs/portaudio
+DEPEND="app-arch/debextract"
+RDEPEND="media-libs/portaudio
 	media-sound/pulseaudio"
 
+pkg_nofetch() {
+	elog "Please download ${A} from ${HOMEPAGE}"
+	elog "and put it into ${DISTDIR} folder."
+}
+
 src_unpack() {
-	# XXX
+	debextract "${DISTDIR}"/${A}
+	unpack ./data.tar.gz
+	rm -f control.tar.gz data.tar.gz debian-binary
 }
 
 src_install() {
-	# XXX
-}
-
-pkg_nofetch() {
-	elog "Please goto ${HOMEPAGE}"
-	elog "and download ${A} into ${DISTDIR}"
+	mv opt usr "${D}"
 }
