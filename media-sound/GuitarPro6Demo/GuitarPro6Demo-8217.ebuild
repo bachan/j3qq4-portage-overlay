@@ -30,5 +30,6 @@ src_unpack() {
 }
 
 src_install() {
+	rm opt/GuitarPro6/libz.so.1
 	mv opt usr "${D}"
 }
