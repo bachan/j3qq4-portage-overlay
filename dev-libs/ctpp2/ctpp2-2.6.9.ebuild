@@ -21,6 +21,7 @@ src_install() {
 	dobin ctpp2c ctpp2json ctpp2vm ctpp2c ctpp2-config
 
 	dolib.so *.so*
+	dolib *.a
 
 	insinto /usr/include/ctpp2
 	doins include/*
