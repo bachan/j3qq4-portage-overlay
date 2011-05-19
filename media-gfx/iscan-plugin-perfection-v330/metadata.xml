@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<herd>no-herd</herd>
+	<maintainer>
+		<email>ba4an@yandex.ru</email>
+		<name>Sergey Bochenkov</name>
+	</maintainer>
+	<longdescription lang="en">
+		Proprietary plugin for several EPSON scanner models with the epkowa SANE backend (provided by media-gfx/iscan).
+		This particular plugin (v330) seems to be required for:
+		Epson Perfection V33
+		Epson Perfection V330 Photo
+	</longdescription>
+</pkgmetadata>
