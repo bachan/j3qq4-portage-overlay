@@ -45,8 +45,6 @@ src_prepare() {
 }
 
 src_install() {
-	cp "${FILESDIR}"/FortuneCity.ttf Fonts/
-
 	local my_dest=/opt/${PN}
 	insinto "${my_dest}"
 	doins -r . || die
