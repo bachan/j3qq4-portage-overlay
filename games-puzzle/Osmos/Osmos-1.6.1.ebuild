@@ -15,13 +15,13 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86 -*"
 IUSE=""
 
-RESTRICT="fetch"
-
 RDEPEND="media-libs/freetype
 	media-libs/libvorbis
 	media-libs/openal
 	x11-libs/libX11
 	virtual/opengl"
+
+RESTRICT="fetch"
 
 S=${WORKDIR}/${PN}
 QA_PRESTRIPPED="/opt/Osmos/Osmos.bin32
@@ -45,6 +45,8 @@ src_prepare() {
 }
 
 src_install() {
+	cp "${FILESDIR}"/FortuneCity.ttf Fonts/
+
 	local my_dest=/opt/${PN}
 	insinto "${my_dest}"
 	doins -r . || die
