@@ -1,0 +1,29 @@
+# ChangeLog for media-gfx/AfterShotPro
+# Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*AfterShotPro-1.0.1.10 (13 Apr 2012)
+
+  13 Apr 2012; Guillaume Castagnino <casta@xwing.info> -AfterShotPro-1.ebuild,
+  +AfterShotPro-1.0.1.10.ebuild, metadata.xml:
+  Version bump. Nostalgia plugin is now embedded in package. Saddly, package
+  versionning is always broken: same URL as previous version, no version in
+  package name...
+
+  18 Feb 2012; Guillaume Castagnino <casta@xwing.info> AfterShotPro-1.ebuild:
+  add nuance use flag
+
+  04 Feb 2012; Guillaume Castagnino <casta@xwing.info> AfterShotPro-1.ebuild:
+  add QA_FLAGS_IGNORED
+
+  03 Feb 2012; Guillaume Castagnino <casta@xwing.info> AfterShotPro-1.ebuild,
+  metadata.xml:
+  add nostalgia plugin support
+
+*AfterShotPro-1 (10 Jan 2012)
+
+  10 Jan 2012; Guillaume Castagnino <casta@xwing.info> +AfterShotPro-1.ebuild,
+  +metadata.xml:
+  Initial AfterShotPro (successor of bibble) version. Depending on future
+  releases, versionning scheme may be prone to some changes...
+
