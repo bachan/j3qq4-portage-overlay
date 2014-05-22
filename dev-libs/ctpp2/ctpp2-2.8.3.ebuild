@@ -12,6 +12,12 @@ KEYWORDS="x86"
 
 DEPEND="dev-util/cmake"
 
+src_unpack() {
+	unpack ${A}
+	cd ${S}
+	epatch "${FILESDIR}"/${P}-getcwd.patch
+}
+
 src_compile() {
 	cmake . || die
 	emake || die
