@@ -8,7 +8,7 @@ SRC_URI="http://ctpp.havoc.ru/download/${P}.tar.gz"
 SLOT="0"
 
 LICENSE="BSD"
-KEYWORDS="x86"
+KEYWORDS="x86 amd64"
 
 DEPEND="dev-util/cmake"
 
